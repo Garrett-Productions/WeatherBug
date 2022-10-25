@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="navBar">
+        <div class="navContent">
+            <h1>WeatherBug</h1>
+            <div class="weatherLocations">
+            <h2 onclick="alert('Loading Weather Report...')">Burbank</h2>
+            <h2 onclick="alert('Loading Weather Report...')">Chicago</h2>
+            <h2 onclick="alert('Loading Weather Report...')">Dallas</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bodyContainer">
+        <div class="bodyTop">
+            <div class="displayCity">
+            <h2>Honolulu</h2>
+            </div>
+            <div class="displayTemp">
+            <label>show temperature in</label>
+            <select name="tempwratue-scale" onchange="convert(this)"> 
+                <option>ºC</option>
+                <option>ºF</option>
+            </select>
+            </div>
+        </div>
+        <div class="forecastBoxContainer">
+            <div class="forecastBox">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="rainclouds">
+                <p>some rain</p>
+                <div class="tempGauge">
+                    <div class="highTemp temp" id="temp1">
+                        30
+                    </div>
+                    <div class="lowTemp temp" id="temp2">
+                        26
+                    </div>
+                </div>
+            </div>
+            <div class="forecastBox">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="tempGauge">
+                    <div class="highTemp temp" id="temp3">
+                        27
+                    </div>
+                    <div class="lowTemp temp" id="temp4">
+                        24
+                    </div>
+                </div>
+            </div> 
+            <div class="forecastBox">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png" alt="cloudy">
+                <p>some clouds</p>
+                <div class="tempGauge">
+                    <div class="highTemp temp" id="temp5">
+                        32
+                    </div>
+                    <div class="lowTemp temp" id="temp6">
+                        25
+                    </div>
+                </div>
+            </div>
+            <div class="forecastBox">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="tempGauge">
+                    <div class="highTemp temp" id="temp7">
+                        26
+                    </div>
+                    <div class="lowTemp temp" id="temp8">
+                        22
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomMessage" onclick="hide(this)">
+            <img src="assets/cookie.png" alt="Cookie">
+            <div class="bottomMessageRight">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic.<a href="www.google.com"> Read More...</a></p> 
+            </div>
+            <button>I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
