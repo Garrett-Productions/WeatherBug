@@ -1,0 +1,163 @@
+/* Header */ 
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.navBar{
+    background-color: lightskyblue;
+    padding: 5px 50px;
+    margin: 0px auto;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+}    
+
+.navContent button {
+    padding: 0px;
+    margin: 12px;
+}
+
+/* Container skeleton */
+
+.bodyContainer {
+    max-width: 895px;
+    margin: 0px auto;
+    padding-bottom: 8px;
+}
+
+.bodyTop{
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 11px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.displayCity{
+    margin-left: 10px;
+}
+.displayTemp {
+    margin-right: 10px;
+}
+
+.bodyTop h2 {
+    font-weight: lighter;
+}
+
+/* Main Body Components */
+
+.weatherContainer {
+    max-width: 895px;
+    display: flex;
+    margin: 10px;
+    border: 1px black dotted;
+    min-height: 550px;
+    justify-content: space-evenly;
+}
+
+.forecastBoxContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    min-height: 275px;
+}
+
+.forecastBox {
+    height: auto;
+    background-color: #e7e6e6;;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+.forecastBox h2 {
+    font-weight: lighter;
+}
+
+.weatherLocations {
+    display: flex;
+    margin-left: 16px;
+}
+
+.weatherLocations h2 {
+    padding: 11px;
+    margin-left: 10px;
+}
+
+.forecastBox img {
+    max-width: 75%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* Temperature Specifics */
+
+.tempGauge {
+    display:flex;
+    width: 100%;
+    margin-top: 22px;
+}
+
+.temp{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lowTemp {
+    color: blue;
+    margin-right: 20px;
+}
+
+.highTemp{
+    color: red;
+    margin-left: 20px;
+}
+
+.highTemp::after, .lowTemp::after{
+    content: "º";
+}
+/* Pop up Message at the bottom */
+
+.bottomMessage {
+    border: 2px solid black;
+    background-color: #e7e6e6;
+    color: black;
+    width: 862px;
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+    left: 528px;
+}
+
+.bottomMessage img {
+    width: 55px;
+    padding: 15px;
+}
+
+.bottomMessage button {
+    padding: 5px;
+    margin: 30px;
+    background-color: lightskyblue;
+    color: black;
+    box-shadow: 3px 3px;
+    width: 95px;
+    border: black solid 2px;
+    min-width: 80px;
+}
+
+.bottomMessageRight{
+    margin-right: 25px;
+}
